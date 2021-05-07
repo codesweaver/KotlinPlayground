@@ -1,24 +1,8 @@
 fun main() {
-    infix fun Int.times(str: String) = str.repeat(this)
-    println(2 times "Bye ")
+    var a: String
+    val b: Int
 
-    val pair =  "ferrari" to "Katrina"
-    println(pair);
-
-    infix fun String.onto(other: String) = Pair(this, other)
-    val myPair = "McLaren" onto "Lucas"
-    println(myPair)
-
-    val sophia = Person("Sophia")
-//    println(sophia.name)
-//    sophia.name = "codesweaver"
-    val claudia = Person("Claudia")
-    sophia likes claudia
-}
-
-class Person(val name: String) {
-    val likedPeople = mutableListOf<Person>()
-    infix fun likes(other: Person) {
-        likedPeople.add(other)
-    }
+    // println(a)
+    b = 3
+    println(b)
 }
