@@ -1,16 +1,12 @@
-open class Dog {
-    open fun sayHello() {
-        println("bow wow")
+open class Tiger(val origin: String) {
+    fun sayHello() {
+        println("A tiget from $origin says: grrrhhh!")
     }
 }
 
-class Yorkshire : Dog() {
-    override fun sayHello() {
-        println("wif wif!")
-    }
-}
+class SiberianTiger : Tiger("siberian")
 
 fun main() {
-    val dog: Dog = Yorkshire()
-    dog.sayHello()
+    val tiger: Tiger = SiberianTiger()
+    tiger.sayHello()
 }
