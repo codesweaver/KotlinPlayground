@@ -1,12 +1,12 @@
-open class Tiger(val origin: String) {
+open class Lion(val name: String, val origin: String) {
     fun sayHello() {
-        println("A tiget from $origin says: grrrhhh!")
+        println("$name, the lion from $origin says: graoh!")
     }
 }
 
-class SiberianTiger : Tiger("siberian")
+class Asiatic(name: String) : Lion(name = name, origin = "India")
 
 fun main() {
-    val tiger: Tiger = SiberianTiger()
-    tiger.sayHello()
+    val lion: Lion = Asiatic("Rufo")
+    lion.sayHello()
 }
